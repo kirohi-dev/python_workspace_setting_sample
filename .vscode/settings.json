@@ -1,0 +1,30 @@
+{
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.pycodestyleEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.diagnosticMode": "workspace",
+  "python.formatting.provider": "black",
+  "python.analysis.extraPaths": [
+    ".venv"
+  ],
+  "python.linting.flake8Args": [
+    "--max-line-length=120"
+  ],
+  "python.formatting.blackArgs": [
+    "--line-length=120"
+  ],
+}
